@@ -12,14 +12,14 @@ def edit_data():
         nama_baru= input("Masukkan Nama: ")
         stok_baru = int(input("Masukkan Stok: "))
         stok_barang[edit] = {"nama": nama_baru, "stok": stok_baru}
-        print("Data Berhasil Diedit")
+        print("----- Data Berhasil Diedit -----")
     else:
-        print("Index Tidak Valid")
+        print("----- Index Tidak Valid -----")
 
 def hapus_data():
     hapus = int(input("Hapus Data Index Ke : "))
     stok_barang.pop(hapus)
-    print("Data Berhasil Dihapus")
+    print("----- Data Berhasil Dihapus -----")
 
 def cari_data():
     cari_nama = str(input("Cari Nama Barang : "))
@@ -27,7 +27,7 @@ def cari_data():
     for i in stok_barang:
         print(f"•", i["nama"], ",", "stok :", i["stok"])
         return
-    print("Data Barang Kosong")
+    print("----- Data Barang Kosong -----")
 
 def tampilkan_data():
     print("===== Toko Elektronik =====")
